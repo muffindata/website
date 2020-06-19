@@ -1,0 +1,96 @@
+body {
+  font-family: 'Lora', serif;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 1%;
+}
+p{
+  font-family: 'Lora', serif;
+  font-size: 19px;
+  /* line-height: 1; */
+}
+h5{
+  color: #000;
+  margin: 0 20px 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* Nav Bar */
+.container-fluid {
+  padding: 0 15%;
+  background-color: #1b6ca8;
+
+}
+.logo{
+  width: 14%;
+}
+.navbar-brand {
+  font-family: 'Lora', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+/* Introduction section */
+#introduction{
+  padding: 4% 7%;
+}
+.intro{
+  padding: 5% 7%;
+  margin: 0 30px;
+}
+/* Image section */
+.intro-picture1{
+  display: inline-block;
+  width: 33%;
+  float: right;
+  margin: 0 30px 10px 50px;
+  padding-left: 3%;
+}
+.intro-picture2{
+  display: inline-block;
+  width: 33%;
+  float: left;
+  margin: 0 50px 10px 20px;
+  padding-right: 4%;
+}
+/* Features Section */
+#features{
+  padding: 0 12%;
+  background-color: #5c6bc0;
+  text-align: center;
+  color: #fff;
+}
+.carousel-item {
+  padding: 7% 10%;
+}
+/* feature image section */
+.feature-image{
+  width: 25%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/* #manufacture{
+  padding: 5% 5%;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+.one-liner{
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+} */
+#contact{
+  padding: 7% 8%;
+  background-color: #fff;
+}
+.last{
+  margin: 0 50px 20px 0;
+}
