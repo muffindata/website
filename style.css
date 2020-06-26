@@ -1,9 +1,8 @@
 body {
   font-family: 'Lora', serif;
 }
-h2{
+h1{
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
   font-weight: bold;
   padding-bottom: 1%;
   color: #4A4A4A;
@@ -11,21 +10,17 @@ h2{
 p{
   font-family: 'Lora', serif;
   font-size: 19px;
-  /* line-height: 1; */
 }
-h5{
+h3,h5{
   color: #4A4A4A;
-  margin: 0 20px 20px;
-  font-size: 20px;
   font-weight: 900;
+  text-align: left;
 }
 /* Nav Bar */
 .container-fluid {
-  padding: 0 14%;
+  padding: 0 12.5% 7%;
 }
-.logo{
-  width: 14%;
-}
+
 .navbar-brand {
   font-family: 'Lora', sans-serif;
   font-size: 20px;
@@ -40,7 +35,9 @@ h5{
 
 /* Introduction section */
 #introduction{
-  padding: 7% 7% 0;
+  padding top: 15%;
+  padding-right: 12%;
+  padding-left: 5%;
 }
 .block-1{
   margin-bottom: 70px;
@@ -74,31 +71,30 @@ h5{
 
 /* Features Section */
 #features{
-  padding: 0 12%;
-
+  padding: 3% 12% 8%;
   text-align: center;
-
 }
-
+.feature-heading{
+  margin-left: 10px;
+}
+.middle-heading {
+  padding: 15px 20px;
+  background-color: rgba(255,255,255,0.95);
+  max-width: 85%;
+  margin: -15% auto 0;
+  position: relative;
+  text-align: left;
+}
 /* feature image section */
 .feature-image{
-  width: 25%;
-
-  margin: 20px;
+  width: 245px;
 }
-/* #manufacture{
-  padding: 5% 5%;
-  text-align: center;
+#contact{
+  padding: 5% 15%;
   background-color: #EEEEEE;
 }
-.one-liner{
-  font-size: 2.5rem;
-  font-family: 'Roboto', sans-serif;
-} */
-#contact{
-  padding: 7% 8%;
-  background-color: #fff;
-}
 .last{
-  margin: 0 50px 20px 0;
+  position: absolute;
+  right: 140px;
+  top: 30px;
 }
