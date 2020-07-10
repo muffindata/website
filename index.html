@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Muffin Website</title>
+  <title>Muffin Data</title>
   <!-- favicon icon -->
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="images/muffindata-logo.svg">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
     rel="stylesheet">
 
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Bootstrap Script-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -35,11 +35,14 @@
 
 
     <section id="navigation-bar">
-      <div class="header">
-        <div class="container-fluid flex-row" style="max-width:1100px; margin-left:215px;  margin-right: 215px;">
+      <div class="header bggray">
+        <div class="container-fluid flex-row navigation">
           <!-- Nav Bar -->
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="">MUFFIN DATA</a>
+            <a class="navbar-brand fgorange" href="#" id="name">
+              <img src="images/muffindata-logo.svg" alt="">
+              <span>Muffin Data</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -47,16 +50,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#features">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -69,17 +69,14 @@
     <section id="introduction">
       <div class="row row-full-width align-middle">
         <div class="col-lg-6 col-md-6 col">
-          <div class="block-1" style="max-width: 545px;">
-            <h1>Muffin Data is an AI platform.</h1>
-            <p>One of the challenges and opportunities with the Internet of Things is
-              that there has been an explosion of stream data, which is unlike the
-              traditional data.Instead of having one row per customer there may be
-              thousands or millions of rows per customer.</p>
+          <div class="block left">
+            <h1>Housekeeping for your data using witless AI & astute humans</h1>
+            <p>Muffin Data is an AI platform that serves all your data needs. Our team brings expetise in creating data pipelines, building AI models &  design applications for humans.</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col">
-          <div class="img-intro1" style="margin-right: 215px">
-            <img height="300" class="intro-picture1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtFCjy8r_ZmSnRR7-j-ImgYkGI33ZcJnBN8Q&usqp=CAU"
+          <div class="side-img right">
+            <img src="images/platform.jpg"
               alt="picture">
           </div>
         </div>
@@ -87,33 +84,30 @@
 
       <div class="row row-full-width align-middle">
         <div class="col-lg-6 col-md-6 col">
-          <div class="img-intro2" style="padding: 10% 15px 10% 15px;">
-            <img height="300" class="intro-picture2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtFCjy8r_ZmSnRR7-j-ImgYkGI33ZcJnBN8Q&usqp=CAU"
+          <div class="side-img left">
+            <img src="images/dataservices.jpg"
               alt="picture">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col">
-          <div class="block-2" style="width: 520px;height: 280px">
-            <h1>It acts as a toastmaster for your data.</h1>
-            <p>Data is what we believe in, that inspires us to progress and galvanize
-              a potential change. With the advent of technology and access to information
-              we provide invaluable data to help the cause of humanity.</p>
+          <div class="block right">
+            <h1>We collect, clean & label your data</h1>
+            <p>In data, we believe.</p>
+            <p>We manage your complex data needs by sourcing data from multiple sources, cleaning & accurately labelling with our in house label makers.</p>
           </div>
         </div>
       </div>
 
       <div class="row row-full-width align-middle">
         <div class="col-lg-6 col-md-6 col">
-          <div class="block-1" style="max-width: 545px;">
-            <h1> Provides scalability to your data</h1>
-            <p>Lift and shift or cloud burst your on-prem workloads with confidence.
-              Muffin Data is the most robust, secure, and compliant data pipeline
-              tool in the market to move your data lakes to the cloud.</p>
+          <div class="block left">
+            <h1>Build models that scale to your business needs</h1>
+            <p>Our portfolio ranges from creating baselines heuristics to complex Neural Net based models.</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col">
-          <div class="img-intro3" style="margin-right: 215px">
-            <img height="300" class="intro-picture1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNBeBny4jPTvXuIXxk2WnLdrqO8W2E3lmzng&usqp=CAU"
+          <div class="side-img right">
+            <img src="images/robocar.jpg"
               alt="picture">
           </div>
         </div>
@@ -169,22 +163,13 @@
     </section>
 
 
-    <section id="contact">
+    <section id="contact" class="bggray">
 
       <div class="row">
         <div class="col-md-6 col-sm-6 col-12">
-          <h3 class="contact-heading">Start learning</h3>
+          <h1>Made with &hearts; in India</h1>
 
-          <span>Get the latest articles, tutorials, and free resources</span>
-        </div>
-        <div class="col-md-6 col-sm-6 col-12">
-          <nav class="navbar">
-            <form class="form-inline last">
-              <input class="form-control mr-sm-2" type="search" placeholder="Enter your email"
-                aria-label="Enter your email">
-              <button class="btn btn-primary my-2 my-sm-0" type="submit">Subscribe</button>
-            </form>
-          </nav>
+          <p>Reach us at <span id='email' class='fgorange'>info@muffindata.com</span></p>
         </div>
       </div>
     </section>
