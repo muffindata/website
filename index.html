@@ -1,179 +1,219 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
+  <!-- Required meta tags-->
   <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <!-- Color theme for statusbar -->
+  <meta content="#2196f3" name="theme-color">
+  <link href="././img/muffindata-logo.svg" rel="icon">
+  <!-- Your app title -->
   <title>Muffin Data</title>
-  <!-- favicon icon -->
-  <link rel="icon" href="images/muffindata-logo.svg">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous">
+  <!-- Font-Awesome Style Link -->
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Style Sheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link href="assets/css/vendor.min.css" rel="stylesheet">
 
-  <!-- Bootstrap Script-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+  <link href="assets/css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="body-div">
+    <!-- Header Imports -->
+    <section class="header">
 
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a href="#" class="navbar-brand">
+            <img src="./img/muffindata-logo.svg" alt="">
+            <span>Muffin Data</span>
+          </a>
+          <div class="toggleMenu">
+            <img src="./img/hamburger.svg" class="hamberger-open">
+            <img src="./img/hamburger-close.svg" class="hamberger-close">
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="ml-auto navbar-nav">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link scrollToBlog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link scrollToContact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-    <section id="navigation-bar">
-      <div class="header bggray">
-        <div class="container-fluid flex-row navigation">
-          <!-- Nav Bar -->
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand fgorange" href="#" id="name">
-              <img src="images/muffindata-logo.svg" alt="">
-              <span>Muffin Data</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+    </section>
+    <!-- Header Import Ends-->
+
+    <div class="mdData-container">
+          <!--Common Sections -->
+    <section class="bggray about-sections">
+
+      <div class="section-wrapper housekeeping-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="about-section-content left-block">
+                <h1 class="about-section-header">
+                  Housekeeping for your data using witless AI & astute humans
+                </h1>
+                <div class="about-section-details">
+                  Muffin Data is an AI platform that serves all your data needs. 
+                  Our team brings expetise in creating data pipelines, building AI models &  
+                  design applications for humans.
+                </div>
+                <a href="javascript:void(0)" class="section-navigator">Start Learning</a>
+              </div>
             </div>
-          </nav>
+            <div class="col-12 col-md-6 order-1 order-lg-2">
+              <div class="housekeeping-img-wrapper img-wrapper">
+                <img src="./img/platform.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-md-6">
+              <div class="housekeeping-img-wrapper img-wrapper">
+                <img src="./img/image-2.png">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="about-section-content right-block">
+                <h2 class="about-section-header">
+                  We collect, clean & label your data
+                </h2>
+                <div class="about-section-details">
+                  <div class="mb-3">In data, we believe.</div>
+                  We manage your complex data needs by sourcing data from multiple sources, cleaning & accurately labelling with our in house label makers.
+                </div>
+                <a href="javascript:void(0)" class="section-navigator">Start Learning</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="about-section-content left-block">
+                <h2 class="about-section-header">
+                  Build models that scale to your business needs
+                </h2>
+                <div class="about-section-details">
+                  Our portfolio ranges from creating baselines heuristics to complex Neural Net based models.
+                </div>
+                <a href="javascript:void(0)" class="section-navigator">Start Learning</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+              <div class="housekeeping-img-wrapper img-wrapper">
+                <img src="./img/platform.jpg">
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
     </section>
 
-    <section id="introduction">
-      <div class="row row-full-width align-middle">
-        <div class="col-lg-6 col-md-6 col">
-          <div class="block left">
-            <h1>Housekeeping for your data using witless AI & astute humans</h1>
-            <p>Muffin Data is an AI platform that serves all your data needs. Our team brings expetise in creating data pipelines, building AI models &  design applications for humans.</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col">
-          <div class="side-img right">
-            <img src="images/platform.jpg"
-              alt="picture">
+    <!-- Blog Listing Section -->
+    <section class="bgWhite blog-listing-wrapper targeted-section-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="blog-header">From the blog</h4>
+            <ul class="blog-listing">
+              <li class="blog-list">
+                <div class="blog-list-element">
+                  <div class="blog-list-img">
+                    <img src="././img/dataservices.jpg" alt="">
+                  </div>
+                  <div class="blog-details">
+                    <h5 class="blog-header">The power of interactive tools</h5>
+                    <p class="blog-detail">Tools augment our problem-solving capacity. We rely on them to expand our minds and provide ease, accuracy, and [...]					</p>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-list">
+                <div class="blog-list-element">
+                  <div class="blog-list-img">
+                    <img src="././img/dataservices.jpg" alt="">
+                  </div>
+                  <div class="blog-details">
+                    <h5 class="blog-header">The power of interactive tools</h5>
+                    <p class="blog-detail">Tools augment our problem-solving capacity. We rely on them to expand our minds and provide ease, accuracy, and [...]					</p>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-list">
+                <div class="blog-list-element">
+                  <div class="blog-list-img">
+                    <img src="././img/dataservices.jpg" alt="">
+                  </div>
+                  <div class="blog-details">
+                    <h5 class="blog-header">The power of interactive tools</h5>
+                    <p class="blog-detail">Tools augment our problem-solving capacity. We rely on them to expand our minds and provide ease, accuracy, and [...]					</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
+    </div>
 
-      <div class="row row-full-width align-middle">
-        <div class="col-lg-6 col-md-6 col">
-          <div class="side-img left">
-            <img src="images/dataservices.jpg"
-              alt="picture">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col">
-          <div class="block right">
-            <h1>We collect, clean & label your data</h1>
-            <p>In data, we believe.</p>
-            <p>We manage your complex data needs by sourcing data from multiple sources, cleaning & accurately labelling with our in house label makers.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-full-width align-middle">
-        <div class="col-lg-6 col-md-6 col">
-          <div class="block left">
-            <h1>Build models that scale to your business needs</h1>
-            <p>Our portfolio ranges from creating baselines heuristics to complex Neural Net based models.</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col">
-          <div class="side-img right">
-            <img src="images/robocar.jpg"
-              alt="picture">
+    <!-- Import Footer -->
+    <section class="bggray footer-section targeted-section-contact">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="footer-feedback">
+              <div class="feedback-header">
+                  <span> Made with</span>
+                  <img src="././img/heart.svg">
+                  <span>Love </span>
+              </div>
+              <div class="reachOut">
+                Reach us at <a href="mailto:info@muffindata.com">info@muffindata.com</a>
+              </div>
+              <div class="copyright-text">
+                © 2020 Muffin Data | All rights reserved.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section id="features">
-      <h3 class="feature-heading">From the blog</h3>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-12">
-          <img class="feature-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTKncoFd8WbohApkisMdaPxwdbk6WbOQtNnQ&usqp=CAU"
-            alt="">
-          <br>
-          <div class="middle-heading f1">
-            <h5>Agile & Accessible </h5>
-            <p>Whether you’re preparing your data for analysis, or cleansing and matching
-              to build </p>
-          </div>
+    <!-- Imported Scripts -->
 
-        </div>
-        <div class="col-md-3 col-sm-6 col-12">
-          <img class="feature-image img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQt--gDyFYiRPY5zfYbcWvX509KJrcQqm1NTw&usqp=CAU"
-            alt="">
-          <br>
-          <div class="middle-heading f2">
-            <h5>Machine Learning Enabled </h5>
-            <p>The Data Ladder Decision Engine ‘learns’ from human input on what is</p>
+  <script src="assets/js/vendor.js"></script>
 
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12">
-          <img class="feature-image img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5OBC5_CZtVA-TIcChE_DTMgrvf4TOL35Eig&usqp=CAU"
-            alt="">
-          <br>
-          <div class="middle-heading f3">
-            <h5>4000+ Deployments </h5>
-            <p>Data Ladder’s proprietary matching algorithms are a result of decades
-              of R&D </p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12">
-          <img class="feature-image img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-4EP6mVCEKsMNSz0fVFwIBQRZQw53sWr5Zw&usqp=CAU"
-            alt="">
-          <br>
-          <div class="middle-heading f4">
-            <h5>Muffin Data is an AI platform. </h5>
-            <p>Data is what we believe in, that inspires us to progress and galvanize
-              a potential change. </p>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-
-
-    <section id="contact" class="bggray">
-
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-12">
-          <h1>Made with &hearts; in India</h1>
-
-          <p>Reach us at <span id='email' class='fgorange'>info@muffindata.com</span></p>
-        </div>
-      </div>
-    </section>
-  </div>
+  <script src="assets/js/app.js"></script>
 
 </body>
 
