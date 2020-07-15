@@ -18,6 +18,25 @@ function textTruncate(truncateClass){
 
 textTruncate('.perspectives-body');
 
+
+//Function onScroll to add shadow to navbar
+
+
+var supportPageOffset = window.pageXOffset !== undefined;
+var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+window.addEventListener("scroll", function (event) {
+    // var scroll = this.scrollY;
+    var header =  document.querySelector('.header');
+    var scroll = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+    if (scroll > 300) {
+        if (!header.classList.contains('active')) {
+            header.classList.add('active');
+        }
+    } else {
+        header.classList.remove('active')
+    }
+});
+
 function toggleHamberger(){
     var toggleHamberger = $('.toggleMenu');
     toggleHamberger.on('click', function(){
