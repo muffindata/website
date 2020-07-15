@@ -47,17 +47,30 @@ h3, h5 {
 .fgblue {
     color: #4f8a8b !important;
 }
-button:focus, button:hover {
-    outline: 0;
+
+/* Common Buttons Style */
+.btn:focus {
     box-shadow: none;
+    outline: none;
+    font-weight: 500;
 }
-.btn {
-    border-radius: 15px;
+.btn:hover {
+    cursor: pointer;
 }
-.btn:focus, .btn:hover {
-    outline: 0;
-    box-shadow: none;
+.btn.btn-primary {
+    padding: 10px 30px;
+    background-color: #ea907a;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
 }
+.btn.btn-primary:hover {
+    background-color: #ea907a;
+}
+
+
+
 body {
     font-family: Lora, serif;
     line-height: 1.6;
@@ -80,6 +93,13 @@ h2 {
     font-weight: 700;
     color: #4a4a4a;
 }
+
+@media screen and (max-width: 767px){
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 p {
     font-family: Lora, serif;
     font-size: 19px;
@@ -98,7 +118,7 @@ h5 {
 img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 .bgWhite {
     background-color: #fff !important;
@@ -173,13 +193,13 @@ img {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: normal;
-    padding-left: 12px;
+    padding-left: 0px;
 }
 .navbar-collapse .navbar-nav .nav-link {
     padding: 0;
     color: rgba(102, 102, 102, .85);
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: normal;
     font-size: 18px;
     text-transform: capitalize;
@@ -250,7 +270,7 @@ img {
 @media screen and (max-width: 767px) {
     .img-wrapper {
         max-width: 100%;
-        height: 300px;
+        height: 260px;
         margin-bottom: 30px;
    }
 }
@@ -330,11 +350,16 @@ img {
     padding: 3rem 0;
 }
 .feedback-header {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
     align-items: center;
 }
+
+@media screen and (max-width: 767px){
+    .feedback-header {
+        justify-content: center;
+    }
+}
+
 .footer-feedback img {
     height: 30px;
     width: 30px;
@@ -346,6 +371,13 @@ img {
     font-size: 2.5rem;
     font-family: Roboto, sans-serif;
 }
+@media screen and (max-width: 767px){
+    .footer-feedback span {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
 .reachOut {
     display: -ms-flexbox;
     display: flex;
@@ -355,6 +387,14 @@ img {
     font-weight: 600;
     font-size: 1.25rem;
 }
+@media screen and (max-width: 767px){
+    .reachOut {
+        text-align: center;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}
+
 .reachOut a {
     color: #ff6243;
     font-family: Roboto, sans-serif;
@@ -430,12 +470,20 @@ img {
 .copyright-text {
     font-family: 'Roboto', sans-serif;
     color: #4a4a4a;
-    text-align: end;
+    text-align: right;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
+@media screen and (max-width: 767px){
+    .copyright-text {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
 .blog-header {
     color: #4a4a4a;
     font-size: 2rem;
@@ -443,4 +491,130 @@ img {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 24px;
+}
+
+.career-banner{
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 767px){
+    .career-banner{
+        height: 400px;
+    }
+}
+
+.career-banner-img{
+    position: relative;
+}
+.career-banner:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(30,30,30,.5);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.career-banner-overlay{
+    position: absolute;
+    bottom: 60px;
+    z-index: 2;
+}
+
+.career-banner-overlay .career-banner-text{
+    color: #fff;
+    font-size: 3rem;
+}
+.career-banner-overlay .career-banner-desc{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.job-list{
+    width: 100%;
+    margin-top: 36px;
+}
+
+.job-list .nav-pills{
+    width: 400px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 767px){
+    .job-list .nav-pills{
+        width: 100%;
+    }
+}
+
+.nav-pills .nav-link.active{
+    background-color: #fff;
+    position: relative;
+    color: #ea907a;
+}
+.nav-pills .nav-link.active:before{
+   content: "";
+   position: absolute;
+   background-color: #ea907a;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 3px;
+}
+.nav-pills .nav-link{
+    background-color: #fff;
+    color: #4a4a4a;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 1px 20px rgba(10, 10, 10, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 16px;
+    padding: 24px 30px;
+    transition: all 0.3s ease-in;
+}
+
+.nav-pills .nav-link:last-child{
+    margin-bottom: 0;
+}
+
+#v-pills-tabContent{
+    width: calc(100% - 430px);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 767px){
+    #v-pills-tabContent{
+        width: 100%;
+        margin-top: 36px;
+    }
+}
+
+
+#v-pills-tabContent .tab-pane{
+    padding: 16px 24px;
+    height: 100%;
+}
+
+.job-listing-block{
+    margin: 80px 0;
+}
+@media screen and (max-width: 767px){
+    .job-listing-block{
+        margin: 56px 0;
+    }
+}
+
+.listing-desc{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
