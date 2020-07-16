@@ -1,5 +1,5 @@
 body {
-    font-family: Lora, serif;
+    font-family: Roboto, serif;
     line-height: 1.6;
 }
 h1 {
@@ -9,7 +9,7 @@ h1 {
     color: #4a4a4a;
 }
 p {
-    font-family: Lora, serif;
+    font-family: Roboto, serif;
     font-size: 19px;
 }
 h3, h5 {
@@ -72,7 +72,7 @@ h3, h5 {
 
 
 body {
-    font-family: Lora, serif;
+    font-family: Roboto, serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -101,7 +101,7 @@ h2 {
 }
 
 p {
-    font-family: Lora, serif;
+    font-family: Roboto, serif;
     font-size: 19px;
 }
 h3, h5 {
@@ -240,7 +240,7 @@ img {
     margin-bottom: 24px;
 }
 .about-section-content .about-section-details {
-    font-family: Lora, serif;
+    font-family: Roboto, serif;
     font-size: 19px;
     line-height: 1.7;
     margin-bottom: 24px;
