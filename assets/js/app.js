@@ -21,6 +21,9 @@ textTruncate('.perspectives-body');
 
 //Function onScroll to add shadow to navbar
 
+// $(document).ready(function(){
+//     $(".header-section").load("header.html");
+// });
 
 var supportPageOffset = window.pageXOffset !== undefined;
 var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
@@ -52,6 +55,8 @@ toggleHamberger();
 function clickToScroll() {
     var scrollToBlog = $('.scrollToBlog');
     var scrollToContact = $('.scrollToContact');
+    var scrollToAbout = $('.scrollToAbout');
+    var searchForJob = $('.scrollToJobSearch');
     if(scrollToBlog){
         scrollToBlog.click(function () {
             $('html,body').animate({
@@ -64,6 +69,22 @@ function clickToScroll() {
         scrollToContact.click(function () {
             $('html,body').animate({
                     scrollTop: $(".targeted-section-contact").offset().top - 100
+                },
+                'slow');
+        });
+    }
+    if(scrollToAbout){
+        scrollToAbout.click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".targeted-section-about").offset().top - 100
+                },
+                'slow');
+        });
+    }
+    if(searchForJob){
+        searchForJob.click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".targeted-section-jobSearch").offset().top - 100
                 },
                 'slow');
         });

@@ -603,6 +603,7 @@ img {
 #v-pills-tabContent .tab-pane{
     padding: 16px 24px;
     height: 100%;
+    box-shadow: 0 1px 20px rgba(10, 10, 10, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .job-listing-block{
@@ -617,4 +618,42 @@ img {
 .listing-desc{
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+
+
+
+.job-description{
+    padding-bottom: 20px;
+}
+
+.job-role, .job-requirement{
+    padding-top: 20px;
+}
+
+.job-role h4, .job-requirement h4{
+    padding-bottom: 16px;
+    margin-bottom: 0;
+} 
+
+.job-description-wrapper ul{
+    padding-left: 28px;
+    margin-bottom: 0;
+}
+
+.job-description-wrapper ul li{
+    padding-bottom: 10px;
+    list-style: none;
+    line-height: 1.5;
+    position: relative;
+}
+
+.job-description-wrapper ul li:before{
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 10px;
+    background-color: #4a4a4a;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
 }
